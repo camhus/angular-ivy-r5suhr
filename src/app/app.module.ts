@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { DepartmentClassComponent } from '.department-class/department-class.component';
 
 @NgModule({
   imports: [
@@ -17,12 +16,7 @@ import { DepartmentClassComponent } from '.department-class/department-class.com
     AppRoutingModule,
     HttpClientModule,
   ],
-  declarations: [
-    AppComponent,
-    HelloComponent,
-    DepartmentsComponent,
-    DepartmentClassComponent,
-  ],
+  declarations: [AppComponent, HelloComponent, DepartmentsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
